@@ -1,0 +1,56 @@
+﻿@model List<ProjectElderScrolls.Models.Entities.CharacterRace>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    body {
+        background-image: url('https://images3.alphacoders.com/913/thumb-1920-913504.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+</style>
+
+
+<div class="col-md-12 mt-4">
+    @Html.ActionLink("New Race", "AddCharacterRace", null, new { @class = "btn btn-success" })
+</div>
+
+<div class="row mt-4">
+    <div class="col">
+        <table class="table table-primary">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Race Name</th>
+                    <th>Racial</th>
+                    <th>Lore</th>
+
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var characterRace in Model)
+                {
+                <tr>
+                    <td>@characterRace.RaceId</td>
+                    <td>@characterRace.RaceName</td>
+                    <td>@characterRace.Racial</td>
+                    <td>@characterRace.Lore</td>
+                    <td>
+                        @Html.ActionLink("Remove", "RemoveCharacterRace", new { raceId = characterRace.RaceId }, new { @class = "btn btn-danger" })
+                        @Html.ActionLink("Update", "UpdateCharacterRace", new { raceId = characterRace.RaceId }, new { @class = "btn btn-warning" })
+                    </td>
+
+                </tr>
+                }
+
+
+
+            </tbody>
+        </table>
+    </div>
+</div>
+

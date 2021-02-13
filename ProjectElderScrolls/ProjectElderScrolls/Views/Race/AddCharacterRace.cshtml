@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "AddCharacterRace";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+body { background-image: url('https://www.wallpapertip.com/wmimgs/73-730004_khajiit-the-elder-scrolls.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover; }
+</style>
+
+<div class="col-md-6">
+    <form method="post">
+        <div class="form-group">
+            <label>Race Name</label>
+            <input type="text" name="RaceName" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Racial</label>
+            <input type="text" name="Racial" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Lore</label>
+            <input type="text" name="Lore" class="form-control" />
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Save</button>
+    </form>
+</div>
+

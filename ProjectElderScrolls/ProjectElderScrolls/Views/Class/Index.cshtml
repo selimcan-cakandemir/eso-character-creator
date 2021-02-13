@@ -1,0 +1,63 @@
+﻿@model List<ProjectElderScrolls.Models.Entities.CharacterClass>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    body {
+        background-image: url('https://images3.alphacoders.com/913/thumb-1920-913504.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+</style>
+
+
+<div class="col-md-12 mt-4">
+    @Html.ActionLink("New Class", "AddCharacterClass", null, new { @class = "btn btn-success" })
+</div>
+
+<div class="row mt-4">
+    <div class="col">
+        <table class="table table-primary">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Class Name</th>
+                    <th>Strength</th>
+                    <th>Intelligence</th>
+                    <th>Agility</th>
+                    <th>WeaponDamage</th>
+                    <th>SpellDamage</th>
+                    <th>Lore</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var characterClass in Model)
+                {
+                <tr>
+                    <td>@characterClass.ClassId</td>
+                    <td>@characterClass.ClassName</td>
+                    <td>@characterClass.Strength</td>
+                    <td>@characterClass.Intelligence</td>
+                    <td>@characterClass.Agility</td>
+                    <td>@characterClass.WeaponDamage</td>
+                    <td>@characterClass.SpellDamage</td>
+                    <td>@characterClass.Lore</td>
+                    <td>
+                        @Html.ActionLink("Remove", "RemoveCharacterClass", new { classId = characterClass.ClassId }, new { @class = "btn btn-danger" })
+                        @Html.ActionLink("Update", "UpdateCharacterClass", new { classId = characterClass.ClassId }, new { @class = "btn btn-warning" })
+                    </td>
+                </tr>
+                }
+
+
+
+            </tbody>
+        </table>
+    </div>
+</div>
+

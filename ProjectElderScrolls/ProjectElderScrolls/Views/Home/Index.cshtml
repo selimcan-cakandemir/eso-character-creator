@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@if (Session["login"] != null)
+{
+    <div class="alert alert-success">
+        <span>Login succesful!</span>
+    </div>
+}
+
+<div class="row mt-2">
+    <div class="col">
+        <h5 style="text-align:center">View classes</h5>
+        <a href="@Url.Action("Index", "Class")" class="links">
+            <img class="img-fluid" style="max-width:100%;height:auto;" src="@Url.Content("https://i.pinimg.com/originals/9b/7e/5a/9b7e5a131083caf285c39be89cbfff08.png")">
+
+        </a>
+    </div>
+    <div class="col">
+        <h5 style="text-align:center">View races</h5>
+        <a href="@Url.Action("Index", "Race")" class="links">
+            <img class="img-fluid" style="max-width:100%;height:auto;" src="@Url.Content("https://i.pinimg.com/originals/8b/ee/3a/8bee3a2dd66c94dbee0a3829eab6c741.png")">
+
+        </a>
+    </div>
+    <div class="col">
+        <h5 style="text-align:center">Create your class</h5>
+        <a href="#">
+            <img src="https://i.pinimg.com/originals/54/68/d1/5468d10a7c7f81eb5e939da6a83344cb.jpg" class="img-fluid" style="max-width:100%;height:auto;" />
+        </a>
+    </div>
+</div>

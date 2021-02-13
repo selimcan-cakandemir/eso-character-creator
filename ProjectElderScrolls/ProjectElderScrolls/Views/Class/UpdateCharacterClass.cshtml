@@ -1,0 +1,40 @@
+﻿@model ProjectElderScrolls.Models.Entities.CharacterClass
+@{
+    ViewBag.Title = "UpdateCharacterClass";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="col-md-6">
+    <form method="post">
+        <div class="form-group">
+            <label>Class Name</label>
+            <input type="text" value="@Model.ClassName" name="ClassName" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Strength</label>
+            <input type="number" value="@Model.Strength" name="Strength" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Intelligence</label>
+            <input type="number" value="@Model.Intelligence" name="Intelligence" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Agility</label>
+            <input type="number" value="@Model.Agility" name="Agility" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>WeaponDamage</label>
+            <input type="number" value="@Model.WeaponDamage" name="WeaponDamage" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>SpellDamage</label>
+            <input type="number" value="@Model.SpellDamage" name="SpellDamage" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Lore</label>
+            <input type="text" value="@Model.Lore" name="Lore" class="form-control" />
+        </div>
+        <button type="submit" class="btn btn-primary">Save</button>
+    </form>
+</div>
+

@@ -1,0 +1,43 @@
+﻿@model ProjectElderScrolls.Models.ViewModels.AppUserVM
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-4">
+        @if (Session["login"] == null)
+        {
+            <div class="alert alert-danger">
+                <span>You aren't logged in or user doesn't exist. If you don't have an account, make one following the link below.</span>
+            </div>
+        }
+        else
+        {
+            <div class="alert alert-success">
+                <span>You are logged in!</span>
+            </div>
+        }
+
+        <div class="panel">
+            <div class="panel-heading">
+                <h3>Login</h3>
+            </div>
+            <div class="panel-body">
+                <form method="post">
+                    <div class="form-group">
+                        <label>Username</label>
+                        <input type="text" name="UserName" />
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" name="Password" class="ml-1" />
+                    </div>
+                    <button class="btn btn-primary">Login</button>
+
+                </form>
+            </div>
+            @Html.ActionLink("Create user", "Create", "Home", null, new { @class = "btn btn-warning mt-2" })
+        </div>
+    </div>
+</div>
