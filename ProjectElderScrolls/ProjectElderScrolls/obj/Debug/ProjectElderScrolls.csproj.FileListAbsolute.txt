@@ -81,3 +81,9 @@ C:\Users\user\source\repos\ProjectElderScrolls\ProjectElderScrolls\obj\Debug\Pro
 C:\Users\user\source\repos\ProjectElderScrolls\ProjectElderScrolls\obj\Debug\ProjectElderScrolls.csproj.CopyComplete
 C:\Users\user\source\repos\ProjectElderScrolls\ProjectElderScrolls\obj\Debug\ProjectElderScrolls.dll
 C:\Users\user\source\repos\ProjectElderScrolls\ProjectElderScrolls\obj\Debug\ProjectElderScrolls.pdb
+C:\Users\user\source\repos\ProjectElderScrolls\ProjectElderScrolls\bin\System.Net.Http.Formatting.dll
+C:\Users\user\source\repos\ProjectElderScrolls\ProjectElderScrolls\bin\System.Web.Http.dll
+C:\Users\user\source\repos\ProjectElderScrolls\ProjectElderScrolls\bin\System.Web.Http.WebHost.dll
+C:\Users\user\source\repos\ProjectElderScrolls\ProjectElderScrolls\bin\System.Net.Http.Formatting.xml
+C:\Users\user\source\repos\ProjectElderScrolls\ProjectElderScrolls\bin\System.Web.Http.xml
+C:\Users\user\source\repos\ProjectElderScrolls\ProjectElderScrolls\bin\System.Web.Http.WebHost.xml
